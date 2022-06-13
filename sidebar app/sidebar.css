@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(217, 212, 212);
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 65px;
+    position: relative;
+    background: white;
+    
+}
+.close-hdr{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.toggle{
+    font-size: 30px;
+    float: right;
+    margin-top:12px;
+    margin-right: 20px;
+    border: none;
+    background: transparent;
+    color:rgb(21, 225, 157);
+    animation:zoom 1.5s infinite;
+}
+.toggle:hover{
+    cursor: pointer;
+    animation: none;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.sidebar{
+  width:400px; 
+  height:; 
+  overflow: hidden;
+  background:white;
+  /* margin-top: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: .8s;
+  transform: translate(-100%);
+
+}
+.open-sidebar{
+    /* width: 400px; */
+    height: 100vh;
+    transform: translate(0);
+}
+.logo{
+    display: flex;
+    justify-content:space-between;
+}
+.close-btn{
+    font-size: 35px;
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    margin-right: 20px;
+    /* transform: rotate(360); */
+    color: rgb(216, 20, 20);
+
+}
+.close-btn:hover{
+    cursor: pointer;
+    color: red;
+    transform: rotate(360deg);
+    transition: .5s ease-in-out;
+}
+.logo h2{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 35px;
+    /* font-family: cursive; */
+}
+h2 span{
+    color:rgb(134, 248, 210);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    margin-right: 2px;
+    font-family: cursive;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    
+
+}
+.link{
+    font-size: 25px;
+    width: 100%;
+    height: 65px;
+    padding: 20px;
+    
+}
+.link a{
+    color: grey;
+    font-weight: bold;
+    text-align: center;
+}
+.link a:hover{
+    
+}
+.link:hover{
+    background:turquoise;
+    /* text-transform: calcX(1.5); */
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.fab{
+    font-size: 35px;
+    color:rgb(21, 225, 157);
+}
+.fab:hover{
+    color: grey;
+    transition: .8s;
+}
+@media only screen and (max-width:400){
+    .sidebar{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0px;
+    }
+    .social-icons{
+        
+        margin-bottom: 0px;
+    }
+    .fab{
+        font-size: 20px;
+    }
+    
+    .logo h2{
+        font-size: 30px;
+    }
+}

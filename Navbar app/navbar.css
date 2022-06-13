@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.main{
+    background: rgb(239, 233, 233);
+    width: 100vw;
+    height: 100vh;
+
+}
+.links{
+    height: 0;
+    overflow: hidden;
+    margin-top: 5px;
+    
+    
+
+}
+.open-links{
+    height: 10rem;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    color: gray;
+    
+    
+}
+.link li a{
+    color: gray;
+    font-weight: 500;
+    
+    
+}
+.link li{
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.link li:hover{
+    background:rgb(102, 239, 193);
+    transition: .6s;
+}
+li a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.icons{
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    /* margin-left:0px; */
+    
+    
+}
+.open-icons{
+    height: auto;
+    width: 100%;
+}
+.social-icons{
+    display: flex;
+    /* margin: 2px; */
+    justify-content: space-evenly;
+    
+
+}
+.fab{
+    justify-content: space-evenly;
+
+    font-size: 35px;
+    background: transparent;
+    color: #ff7200;
+    
+}
+.fab:hover{
+    color: gray;
+    transition: .8s ease;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+.logo h1{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 1200;
+    /* font-family: cursive; */
+}
+.toggle{
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    
+    border: none;
+    background: transparent;
+    color:rgb(102, 239, 193);
+    
+}
+.toggle:hover{
+   cursor: pointer;
+   transition: .5s; 
+   transform: rotate(90deg);
+}
+.toggle::after{
+    transition: .5s;
+}
+h1 a{
+    text-decoration: none;
+    color:#ff7200;
+}
+h1 span{
+    color:rgb(102, 239, 193);
+}
+header{
+    background: white;
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    
+}
+
+@media only screen and (min-width: 868px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .toggle{
+        display: none;
+    }
+    main{
+        background: #ff7200;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .links{
+        height: auto;
+        margin-top: 25px;
+    }
+    .link{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
+    }
+    .icons{
+        height: auto;
+        width: auto;
+        margin-top: 30px;
+    }
+    .social-icons{
+        display: flex;
+        justify-content: space-evenly;
+    
+        
+    }
+    .fab{
+        font-size: 25px;
+        margin-left: 25px;
+
+    }
+    .fab:hover{
+        color:gray;
+        transition: .8s ease-in;
+    }
+    li{
+        padding-right: 20px;
+    }
+    .link a:hover{
+        color: #ff7200;
+        transition: .8s ease;
+    }
+    .link li:hover{
+        background: #fff;
+        
+    }
+    
+  }
+  @media only screen and (min-width:575px) and (max-width:867px){
+      
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        width: 60%;
+        margin-bottom:5px;
+        margin-left: -5px;
+    }
+    h1{
+        font-size: 25px;
+        text-align: center;
+        /* display: none; */
+    }
+    main{
+        /* background: #ff7200; */
+    }
+    header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        /* margin-bottom: 0; */
+    }
+    .links{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin-top: auto;
+        /* margin-left: 150px; */
+    }
+    .link{
+        display: flex;
+        width: 100%;
+        /* margin-top: auto; */
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
+    }
+    li a{
+        /* margin-right: 50px; */
+        font-size: 20px;
+        /* align-items: center; */
+
+    }
+    .link a:hover{
+        color: #ff7200;
+        transition: .8s ease;
+    }
+    .link li:hover{
+        background: #fff;
+        
+    }
+    .icons{
+        height: 0;
+        width: 0;
+        /* overflow: hidden; */
+    }
+  }
+  

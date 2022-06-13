@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("hero.jpeg");
+    /* background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 90%;
+    height: 40%;
+    background-color: rgba(7, 2, 2, 0.57);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    z-index: 1;
+    /* visibility: hidden; */
+}
+.close-oc{
+    visibility: hidden;
+    z-index: -10;
+}
+h1{
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    color: #fff;
+    font-size: 45px;
+}
+.open{
+    margin-top: 30px;
+    width: 120px;
+    height: 35px;
+    /* font-family: cursive; */
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    border-radius: 10px;
+    border: 3px solid rgb(62, 168, 255);
+    box-shadow: 2px solid black;
+    background: rgb(62, 168, 255);
+}
+.open:hover{
+    cursor: pointer;
+    background: #fff;
+}
+.i-content{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    border-radius: 10px;
+    /* margin-top: 5%; */
+    visibility: hidden;
+    z-index: -10;
+}
+.i-content h2{
+    /* margin-left:250px; */
+    /* color:blue ; */
+    text-align: center;
+    /* margin-top:35%; */
+}
+.open-ic{
+    visibility: visible;
+    z-index: 10;
+    background: #fff;
+}
+.close{
+    font-size: 30px;
+    border: none;
+    background: transparent;
+    color: rgb(128, 40, 40);
+    /* margin-top:-200px;
+    margin-right: 20px; */
+    /* align-self: baseline; */
+    
+    
+}
+.close:hover{
+    color: rgb(229, 48, 48);
+    transform: rotate(360deg);
+    transition: .8s;
+    cursor: pointer;
+}
+@media only screen and (min-width:750px) {
+    .content{
+        height: 70vh;
+        width: 80vh;
+    }
+    
+}

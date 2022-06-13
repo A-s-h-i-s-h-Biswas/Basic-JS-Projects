@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #ff7200;
+}
+.title h2 a{
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+    font-weight: 1900;
+    /* letter-spacing: 1.2px; */
+
+}
+.color{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+ul li{
+    list-style: none;
+    margin-left: 85px;
+    
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.simple a:hover{
+    color: green;
+    cursor: pointer;
+    transition: .9s ease-in;
+}
+.hexa a:hover{
+    color: green;
+    cursor: pointer;
+    transition: .9s ease-in;
+}
+.title h2 a:hover{
+    color: green;
+    cursor: pointer;
+    transition: .9s ease-in;
+}
+
+.main{
+    text-align: center;
+    margin: auto;
+    margin-top: 15em;
+    width: 40%;
+    height: 30vh;
+    background-color: rgba(255,255,255,.15);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding-top: 40px;
+}
+.btn{
+    margin: auto;
+    margin-top: 8
+    0px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #ff7200;
+    border-radius: 5px;
+    background:#ff7200;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 70px;
+}
+h1 .hh{
+    /* padding: 20px; */
+}
+.btn:focus{
+    outline: none;
+}
+.btn:hover{
+    background: green;
+    cursor: pointer;
+    border: 1px solid green;
+}

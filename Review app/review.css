@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    width: 100vw;
+    height: 100vh;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 600px;
+    height: 450px;
+    margin: auto;
+    background-color: white;
+    backdrop-filter: (5px);
+    border-radius: 5px;
+    
+}
+.img{
+    /* display: none; */
+    margin-top: -30px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border-bottom-right-radius:30% solid rgb(135, 224, 236);
+    /* background: transparent; */
+}
+.person{
+    width: 90%;
+    /* height: 50%; */
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+.bio{
+    width: 80%;
+    /* height: 30%; */
+    margin: auto;
+    margin-top: -20px;
+    /* font-weight: 600; */
+
+}
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+    height: 10px;
+    margin: auto;
+    /* font-size: 35px; */
+    margin-top: -20px;
+    border: 1px;
+    border-top: none;
+}
+.name{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: cursive;
+}
+.job{
+    font-weight: bold;
+    color: rgb(42, 89, 80);
+}
+.btn{
+    font-size: 25px;
+    margin: auto;
+    background: white;
+    border-style: none;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.left, .right{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.random{
+    background: #07282c;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    border:2px solid #110d0a;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.left:hover{
+    color: gray;
+}
+.right:hover{
+    color: gray;
+}
+.random:hover{
+    background: gray;
+    border: 1px solid gray;
+}
+.fa-solid{
+    font-size: 35px;
+}
+.title{
+    /* padding-top: 10em; */
+}
+.title h3{
+    margin-top: 5px;
+    border-bottom: 2px solid #ff7200;
+}
+.title h1{
+    font-weight: bold;
+    margin-top: 100px;
+}
